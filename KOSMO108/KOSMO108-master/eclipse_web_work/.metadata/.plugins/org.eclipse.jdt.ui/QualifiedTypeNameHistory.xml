@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="a.b.c.kos.vo.MemVO"/>
+<fullyQualifiedTypeName name="a.b.c.kos.service.MemService"/>
+<fullyQualifiedTypeName name="a.b.c.kos.service.MemServiceImpl"/>
+<fullyQualifiedTypeName name="a.b.c.kos.dao.MemDAO"/>
+<fullyQualifiedTypeName name="a.b.c.kos.dao.MemDAOImpl"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.PreparedStatement"/>
+<fullyQualifiedTypeName name="java.sql.ResultSet"/>
+<fullyQualifiedTypeName name="a.b.c.common.KosmoConnProperty"/>
+<fullyQualifiedTypeName name="java.sql.Statement"/>
+<fullyQualifiedTypeName name="a.b.c.common.DateUtil"/>
+<fullyQualifiedTypeName name="a.b.c.kos.sql.MemQueryMap"/>
+<fullyQualifiedTypeName name="a.b.c.common.ChabunUtil"/>
+<fullyQualifiedTypeName name="java.io.BufferedWriter"/>
+<fullyQualifiedTypeName name="java.net.MalformedURLException"/>
+<fullyQualifiedTypeName name="java.io.BufferedReader"/>
+<fullyQualifiedTypeName name="java.io.InputStreamReader"/>
+<fullyQualifiedTypeName name="java.io.OutputStreamWriter"/>
+<fullyQualifiedTypeName name="java.io.FileWriter"/>
+</qualifiedTypeNameHistroy>

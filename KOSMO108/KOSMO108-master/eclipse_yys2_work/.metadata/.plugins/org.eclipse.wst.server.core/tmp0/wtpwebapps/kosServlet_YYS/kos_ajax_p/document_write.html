@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+</head>
+<body>
+<!--  document.wirte() 는 사용을 지양하여야 한다. -->
+<p>일 초 후, 이 페이지의 내용은 전부 교체됩니다.</p>
+<script>
+// 일 초 후, document.write 호출
+// 페이지 로드가 끝난 후이므로 기존 내용이 사라집니다.
+setTimeout(() => document.write("<b>... 사라졌습니다.</b>"), 1000);
+// 바뀌고 나면 다른 페이지에서 값을 바인딩 할 떄, 이전 코드 조각이 사라지면 값을 넘겨 받을 수가 없음.
+
+</script>
+</body>
+</html>

@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#btn").click(function(){
+			$("#f1").attr({
+				"action":"/kosServlet_YYS/a.b.c.test/hello.jsp",
+				"method":"GET"
+			}).submit();
+			
+		});
+		
+	});
+</script>
+<style type="text/css">
+	form{
+		text-align:center;
+	}
+</style>
+</head>
+<body>
+<h3>연습</h3>
+<form id="f1">
+	<input type="text" id="mid" name="mid" class="mid" >
+	<input type="button" id="btn" value="발사잇!"><br>
+	<hr>
+	<img src="/kosServlet_YYS/image/10607796_20210513201807_500.jpg" alt="image">
+	<h2 style="color:red;">붉은색</h2>
+	<h2 style="color:blue;">푸른색</h2>
+	<h2 style="color:green;">그 사이 3초 그 짧은 시간</h2>
+	<h2 style="color:yellow;">노란색 빛을 내는</h2>
+	<h2 style="color:green;">저기 저 신호등이</h2>
+</form>
+</body>
+</html>

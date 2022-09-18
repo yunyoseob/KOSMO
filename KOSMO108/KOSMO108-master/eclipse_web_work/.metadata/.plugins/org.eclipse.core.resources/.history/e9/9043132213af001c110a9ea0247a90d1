@@ -1,0 +1,60 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="a.b.c.t6.servie.T6Service" %>
+<%@ page import="a.b.c.t6.servie.T6ServiceImpl" %>
+<%@ page import="a.b.c.t6.vo.T6VO" %>  
+<%@ page import="java.util.ArrayList" %>     
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TEST_T6 SELECT NUM</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		$("#t6delete_btn_ok").click(function(){
+			
+			$("#form_t6_delete_ok").attr(
+					{
+						
+					}
+					).submit();
+		})
+		
+	})
+
+</script>
+</head>
+<body>
+	<h3 align="center">TEST_T6 SELECT NUM</h3>
+	<form name="form_t6_delete_ok" id="form_t6_delete_ok">
+	<table border="1" align="center">
+<%
+	String t1 = request.getParameter("t1");
+	System.out.println("t1 >>> : " + t1);
+	T6VO tvo = null;
+	tvo = new T6VO();		
+	tvo.setT1(t1);
+
+	T6Service ts = new T6ServiceImpl();	
+	ArrayList<T6VO> aList = ts.t6SelectNum(tvo);
+	
+	if (aList !=null && aList.size() == 1) {
+		
+		T6VO _tvo = aList.get(0);
+		T6VO.printT6VO(_tvo);
+%>
+<tr>
+	<td colspan="2" align="center">회원 글 삭제하기</td>
+</tr>	 
+<tr>
+	<td align="center">T1</td>
+	<td><input type="text" name="t1" id="t1" size="20" readonly value="<%= _tvo.getT1() %>"></td>
+</tr>
+</table>
+</form>
+<%
+	}
+%>
+</body>
+</html>

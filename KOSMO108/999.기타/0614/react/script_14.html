@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Literal Enhancements</title>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Literal Enhancements</h1>
+<p>Open the console</p>
+<script type="text/babel">
+
+    // 객체 리터럴 개선
+
+    var name = "탈락"
+    var elevation = 9738
+
+    var funHike = { name,elevation }
+
+    console.log(funHike)
+
+    // 함수를 포함하는 객체 리터럴 개선
+
+    var name_1 = "탈락"
+    var elevation_1 = 9738
+    var print = function() {
+      console.log(`${this.name_1} 산의 높이는 ${this.elevation_1}피트입니다.`)
+    }
+
+    var funHike_1 = { name_1, elevation_1, print }
+
+    funHike_1.print()
+
+
+    // 예전 방식의 객체 리터럴
+
+    var name_2= "Léo Taillefer"
+    var sound = "Kahh"
+
+    var skier = {
+      name_2: name_2,
+      sound: sound,
+     
+      powderYell: function() {
+        var yell = this.sound.toUpperCase()
+        console.log(`${yell} ${yell} ${yell}!!!`)
+      },
+     
+      speed: function(mph) {
+        this.speed = mph
+        console.log('속력(mph):', mph)
+      }
+    }
+
+    skier.powderYell()
+    skier.speed("엉덩이에 불날 것 같은")
+    console.log(JSON.stringify(skier))
+
+
+	// 객체 리터럴 개선
+
+    var name_3 = "Julia Mancuso"
+    var sound_3 = "go fast"
+
+    const skier_3 = {
+      name_3,
+      sound_3,
+     
+      powderYell_3() {
+        let yell_3 = this.sound_3.toUpperCase()
+        console.log(`${yell_3} ${yell_3} ${yell_3}!!!`)
+      },
+     
+      speed_3(mph) {
+        this.speed_3 = mph
+        console.log('속력(mph):', mph)
+      }
+    }
+
+    skier_3.powderYell_3()
+    skier_3.speed_3(350)
+    console.log(JSON.stringify(skier_3))
+
+</script>
+</body>
+</html>

@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TEST_T6 테이블</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<link rel="stylesheet" href="/firstWeb/calendar_datepicker/jquery-ui-1.12.1/jquery-ui.min.css">
+<script src="https://code.jquery.com/jquery-1.12.4.js"></script>
+<script src="/firstWeb/calendar_datepicker/jquery-ui-1.12.1/jquery-ui.min.js"></script>
+<script src="/firstWeb/calendar_datepicker/jquery-ui-1.12.1/datepicker-ko.js"></script>
+
+<script type="text/javascript">
+	alert("스크립트 블럭에 진입 성공");
+	
+	// $(document).ready(function(){})
+	$(document).ready(function(){
+		alert("$(document).ready(function(){}) 진입 ");
+		$("#t2name_btn").click(function(){
+		// <input type="button" id="t2name_btn" value="이름검색" />
+		// 버튼을 클릭하면 실행
+		alert("t2name_btn 버튼 클릭 성공 >>> : ");
+			// $("#form_t2_name").attr({}).submit();
+			$("#form_t2_name").attr(
+				// <form name="form_t2_name" id="form_t2_name">이름 검색
+				{
+					"action":"/firstWeb/test_t6p/t6selectName.jsp",
+					"method":"GET"
+					// action은 t6selectName.jsp로 가고
+					// 방식은 GET방식
+				}
+			).submit();
+		}); // $("#t2name_btn").click(function()
+		
+		/*
+		첫 번째 방법
+		// $("t2date_btn").click(function(){})
+		$("#t2date_btn").click(function(){
+			// <input type="button" id="t2date_btn" value="날짜검색" />
+			alert("t2date_btn 버튼 클릭 성공 >>> : ");
+			// $("#form_t2_date").attr({}).submit();
+			$("#form_t2_date").attr(
+			// <form name="form_t2_date" id="form_t2_date">
+					{
+						"action":"/firstWeb/test_t6p/t6selectDate.jsp",
+						"method":"GET"
+					}
+				).submit();
+		}) // end of $("#t2date_btn").click(function()
+		*/
+		
+		// 날짜 검색 두 번 째 방법
+		// $("#fromdate").datepicker();
+		$("#fromdate").datepicker(
+			{
+				showOn : "button",
+				buttonImage:""
+			
+			}
+		);
+		
+	}); // end of $(document).ready(function(){})
+</script>
+</head>
+<body>
+<h3>TEST_T6 테이블</h3>
+<hr>
+<!-- SELECT -->
+<a href="/firstWeb/test_t6p/t6SelectAll.jsp">전체 조회</a>
+<br>
+
+<form name="form_t2_name" id="form_t2_name">이름 검색
+<input type="text" name="t2" id="t2" />
+<input type="button" id="t2name_btn" value="이름검색" />
+</form>
+<br>
+
+<form name="form_t5_date" id="form_t5_date">
+	날짜 검색 <input type="text" name="fromdate" id="fromdate"/>~
+		  <input type="text" name="todate" id="todate"/>
+		  <input type="button" id="t5date_btn" value="날짜검색" />
+</form>
+<br>
+
+<!--  INSERT -->
+<a href="/firstWeb/test_t6p/t6Insert.jsp">데이터 입력</a>
+<form name="form_t6_insert" id="form_t6_insert">
+	이름 <input type="text" name="t2" id="t2"><br>
+	나이 <input type="text" name="t3" id="t3"><br>
+	<input type="button" id="t6insert_btn" value="입력"/>
+</form>
+<br>
+
+<!--  UPDATE -->
+<a href="/firstWet/test_t6p/t6Update.html">데이터 수정</a>
+<form name="form_t6_update" id="form_t6_update">
+	회원번호 <input type="text" name="t1" id="t1">
+		   <input type="button" id="t6update_btn" value="검색">
+</form>
+
+<!--  DELETE -->
+<a href="/firstWet/test_t6p/t6Delete.jsp">데이터 삭제</a>
+<form name="form_t6_delete" id="form_t6_delete">
+	회원번호 <input type="text" name="t1" id="t1">
+		   <input type="button" id="t6delete_btn" value="검색">
+</form>
+</body>
+</html>

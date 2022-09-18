@@ -1,0 +1,39 @@
+20220302 YYS
+
+Buffer : 물레방아
+
+자바에서의 데이터의 최소단위는 byte이다.
+(1byte는 8bit이다.)
+
+자바에서 입출력 시에 송수신하는 데이터의 단위와
+
+자바에서 다루는 데이터의 단위가 다르다.
+
+예시로, 1024k 이면,
+
+1024/8 = 128byte
+
+가 된다.
+
+======
+
+따라서, buffer라는 개념을 통해서, FileInputStream으로 받은 데이터를
+
+BufferInputStream을 통해 통에 담아 둔 다음 입력하고,
+
+보낼 때는 FileOutputStream으로 보낸 다음, 이를 BufferOutputStream으로 
+
+통에 담아서 내보낸다.
+
+=====
+
+통에 찌꺼기가 남아있을 수 있기 때문에 BufferOutputStream으로 내보낸 뒤에는,
+
+flush() 명령어를 쓴 뒤,  close()와 null을 꼭 써줘야 한다.
+
+========
+
+
+
+
+

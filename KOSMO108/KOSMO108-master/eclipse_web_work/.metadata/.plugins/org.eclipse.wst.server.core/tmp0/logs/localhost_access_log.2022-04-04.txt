@@ -1,0 +1,4 @@
+127.0.0.1 - - [04/Apr/2022:23:57:21 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:23:57:23 +0900] "GET /firstWeb/getData/formtagpracticejsp.jsp HTTP/1.1" 200 307
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:23:58:33 +0900] "GET /firstWeb/getData/formtagpractice.html HTTP/1.1" 200 1998
+0:0:0:0:0:0:0:1 - - [04/Apr/2022:23:58:43 +0900] "GET /firstWeb/getData/formtagpracticejsp.jsp?mname=%ED%95%98%EC%9D%B4&maddr=%EB%B2%A8%EB%A1%9C%EA%B7%B8 HTTP/1.1" 200 318

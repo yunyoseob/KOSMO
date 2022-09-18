@@ -1,0 +1,67 @@
+ <!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script type="text/javascript">
+	function setOption(){
+		alert("setOption 함수 시작 >>> : ");
+		console.log("setOption 함수 시작 >>> : ");
+		
+		var v1=document.getElementById("v1").selected;
+		var v2=document.getElementById("v2").selected;
+		var v3=document.getElementById("v3").selected;
+		
+		console.log("v1 >>> : "+v1);
+		console.log("v2 >>> : "+v2);
+		console.log("v3 >>> : "+v3);
+		
+		
+		if(v1){
+			// 서울
+			alert("v1");
+			console.log("v1");
+			var seoul=["양천구","강서구","금천구"];
+			console.log("seoul.length >>> : "+seoul.length);
+			document.getElementById("select_2").createElement(seoul);
+			
+			
+			for(c=0; c<seoul.length; c++){
+				var opt = "<option value=" + "'" + c + "'" + ">"+seoul[c]+"</option>";
+				console.log("opt >>> : "+c+"번째 >>> : "+opt);
+				
+				// var opt1=document.createElement('select_2');
+				// console.log("opt1 >>> : "+opt1);
+				
+			}
+			
+		}
+		
+		if(v2){
+			// 경기도
+			alert("v2");
+			console.log("v2");
+		}
+		
+		if(v3){
+			// 인천
+			alert("v3");
+			console.log("v3");
+		}
+	}
+
+</script>
+<body onload="setOption()">
+<select class="select_1" name="select_1" id="select_1" style="width:150px">
+	<option id="v1" value="0">서울</option>
+	<option id="v2" value="1">경기도</option>
+	<option id="v3" value="2">인천</option>
+</select>
+ 
+<select class="select_2" name="select_2" id="select_2" style="width:150px">
+</select>
+
+<select class="select_3" name="select_3" id="select_3" style="width:150px">
+</select>
+</body>
+</html>

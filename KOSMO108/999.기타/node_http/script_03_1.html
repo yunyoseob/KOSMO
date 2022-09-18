@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Document</title>
+</head>
+<body>
+	<h3>박스를 클릭하세요</h3>
+	<div id="container"> </div>
+	<script type="text/javascript">
+		const container = document.getElementById('container');
+		let div;
+		for(let i = 0; i<5; i++){
+			div=cocument.createElement('div');
+			div.onclick=function(){
+				alert('이것은 박스#:' + i+'입니다');
+			};
+		container.appendChild(div);
+		}
+	</script>
+</body>
+</html>

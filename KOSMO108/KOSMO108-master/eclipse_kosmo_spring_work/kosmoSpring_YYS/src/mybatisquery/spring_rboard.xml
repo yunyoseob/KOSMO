@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE mapper PUBLIC "-//mybatis.org//DTD Mapper 3.0//EN" 
+          "http://mybatis.org/dtd/mybatis-3-mapper.dtd">
+<mapper namespace="a.b.c.com.kosmo.rboard.dao.KosmoRboardDAO">
+<insert id="kosmoRboardInsert" parameterType="kosmorboardvo" >
+	INSERT INTO KOSMO_RBOARD( 	
+								RKBNUM, 
+								KBNUM, 
+								RKBNAME,
+	                           	RKBCONTENT,  
+	                           	MDELETEYN,
+	                           	MINSERTDATE
+	                        ) 
+	                  VALUES
+	                  		( 	
+	                  			#{rkbnum,jdbcType=VARCHAR}, 
+	                  			#{kbnum,jdbcType=VARCHAR}, 
+	                  			#{rkbname,jdbcType=VARCHAR},
+	                          	#{rkbcontent,jdbcType=VARCHAR},  
+	                          	'Y',
+	                          	SYSDATE
+	                        )
+</insert>
+<select id="kosmoRboardSelectAll" parameterType="kosmorboardvo" resultType="kosmorboardvo">
+		SELECT 	A.RKBNUM 		RKBNUM
+		       ,A.KBNUM  		KBNUM
+		       ,A.RKBNAME 		RKBNAME
+		       ,A.RKBCONTENT 	RKBCONTENT	   
+	           ,A.MINSERTDATE 	MINSERTDATE
+		FROM 	KOSMO_RBOARD A
+		WHERE 	MDELETEYN = 'Y' 
+		AND 	A.KBNUM = #{kbnum}
+		ORDER BY 1 DESC
+</select>
+</mapper>          

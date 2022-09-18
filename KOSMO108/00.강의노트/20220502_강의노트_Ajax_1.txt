@@ -1,0 +1,65 @@
+2022-05-02
+-----------------------------------
+
+Ajax 는 
+================================================================
+Ajax는 클라이언트(클라이언트 컴퓨터)가 비동기 방식으로[동기 방식으로 도] 
+자바스크립트를 이용하여 
+화면 전환없이 서버(서버 컴퓨터)에서 자료(xml, json, html, plian text etc.)
+를 요청할 때 사용하는 방법이다. 
+================================================================
+
+교차 출처 리소스 공유(Cross-origin resource sharing, CORS)
+----------------------------------------------------------
+자바스크립트는 다른 도메인의 데이터를 기본적으로 가져올 수 없다.
+
+
+
+자바스크립트 보안정책 : 동일 출처 원식 Same-Origin Policy
+-------------------------------------------------------------------
+자바스크립트로 A 사이트의 데이터를 B 사이트로 불러오는 것을 허용하지 않는다.
+ajax() 함수로 서로 다른 도메인의 데이터를 전송할 수 없다.
+교차 도메인(Cross-Domain)도 허용하지 않는다. 
+
+
+
+Ajax 로 데이터 바인딩 해보기 
+-----------------------------------------
+https://mockaroo.com/
+
+
+
+RSS Really Simple Syndication 초간편 배포
+-----------------------------------------
+새로 읽을거리가 자주 갱신되는 블러그나 뉴수에서 주로 사용하는 
+XML 기반의 콘텐츠 배급 포맷이다.
+
+조선일보 : 조선탓검 RSS
+http://rssplus.chosun.com/
+
+오늘의 주요뉴스 RSS
+https://myhome.chosun.com/rss/www_section_rss.xml
+
+
+
+기상청 RSS 서비스 안내 
+https://www.weather.go.kr/w/pop/rss-guide.do
+
+
+
+동네예보 > 중기예보 > 서울.경기도 RSS
+http://www.kma.go.kr/weather/forecast/mid-term-rss3.jsp?stnId=109
+
+기상청 날씨누리 
+https://www.weather.go.kr/w/weather/forecast/mid-term.do?stnId1=109
+
+서울 인천 경기도 
+기상전망
+
+서울 : 최저/최고기온(C) 가져오기 
+
+ajax_weathergokr_rss_xml.jsp : xml 가져오기 
+ajax_weathergokr_rss.xml : 가져온 xml 이름 
+ajax_weathergokr_rss.jsp : ajax 로 xml 에서 데이터 가져와서 화면 dp
+
+2022년 05월 06일 금요일 18시 20분까지 

@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<script type="text/javascript" src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	</head>
+	<body>
+		<!-- if(topic) TF 확인 : True  -->
+		<!-- scope 개념 확인(블럭) : 블럭 안에서의 일이 밖에서도 영향 : var일 때는 블럭 안의 변화가 밖에서도 적용, let일 때는 안에서의 변화가 밖에 영향 X, 
+		밖에서 let으로 선언해도 밖에 영향 X-->
+		<!-- var topic이 아니라 그냥 topic했을 때는? 변화 X-->
+		<!-- var topic에 '자바스크립트' 할당 안하고 다른 데이터타입 할당하고
+		 if문 돌리며 how..? 문자, 문자열, 숫자 다 됨. false는 당연히 안 되고.-->
+		 <script type="text/babel">
+		 	//var 변수의 영역은 블럭 안으로 제한되지 않는다.
+
+		 	/*
+		 	케이스1번
+		 	밖에서 var, 안에서 var
+		 	*/
+			var topic = "자바스크립트";
+			if(topic){
+				var topic = "리엑트1";
+				console.log('블럭',topic);
+			}
+			console.log('글로벌',topic);
+
+
+			console.log('==========================================');
+			//밖에서 let 
+			let topic1 = "자바스크립트2";
+			console.log(topic1); //자바스크립트2
+			if(topic1){
+				let topic1="리엑트2";
+				console.log('블럭',topic1); //블럭 리엑트2
+			}
+			console.log('글로벌',topic1); //글로벌 자바스크립트2
+			console.log('==========================================')
+
+
+			/*
+			자바도 그렇고 자바스크립트도 그렇고, 중괄호 안에서 let으로 할 경우 영향이 없음.
+			*/
+
+			{
+				var test1 = 'test1';
+				let test2 = 'test2';
+			}
+				var test1 = 'test11';
+				let test2 = 'test22';
+			console.log('test1 >>> : ' + test1);//test11
+			console.log('test2 >>> : ' + test2);//test22
+		 </script>
+		 
+		
+		
+	
+	</body>
+</html>

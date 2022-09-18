@@ -1,0 +1,12 @@
+127.0.0.1 - - [23/Mar/2022:00:29:49 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:30:05 +0900] "GET /firstWeb/html/html5p3.html HTTP/1.1" 200 4023
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:30:06 +0900] "GET /firstWeb/images/link.png HTTP/1.1" 200 91016
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:30:06 +0900] "GET /firstWeb/images/salad.jpg HTTP/1.1" 200 72580
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:30:06 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+192.168.219.100 - - [23/Mar/2022:00:32:51 +0900] "GET /firstWeb/html/html5p3.html HTTP/1.1" 200 4023
+192.168.219.100 - - [23/Mar/2022:00:32:51 +0900] "GET /firstWeb/images/link.png HTTP/1.1" 200 91016
+192.168.219.100 - - [23/Mar/2022:00:32:51 +0900] "GET /firstWeb/images/salad.jpg HTTP/1.1" 200 72580
+192.168.219.100 - - [23/Mar/2022:00:32:51 +0900] "GET /favicon.ico HTTP/1.1" 404 818
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:42:56 +0900] "GET /firstWeb/html/html5p3.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:42:58 +0900] "GET /firstWeb/html/html5p3.html HTTP/1.1" 304 -
+0:0:0:0:0:0:0:1 - - [23/Mar/2022:00:43:15 +0900] "GET /firstWeb/html/html5p3.html HTTP/1.1" 304 -

@@ -1,0 +1,8 @@
+INDEX VERSION 1.4+C:\00.KOSMO108\30.Web\ecliipse_web_yys2\eclipse_yys2_work\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+1137296877.index
+3428839988.index
+3062936352.index
+2327653381.index
+1923933832.index
+2560635347.index
+2824788096.index

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h3>ES6 FUNCTION</h3>
+<hr>
+<script type="text/babel">
+	
+	function logFun(){
+		console.log("로그를 잘 찍자 !!!");
+	}
+
+	function logFun_1(){
+		console.log("함수를 호출 :: 로그를 잘 찍자 !!!");	
+	}
+	logFun_1();
+
+	hello();
+	// 함수 선언
+	function hello() {
+		alert("hello!!!");
+	}
+
+	hey();
+	// 표현식 함수 선언 
+	const hey = function(){
+		alert("hey!!!");	
+	}
+
+	// ES6 함수 
+	function logActivity(name="전건희", activity="운동을 좋아한다.") {
+    	console.log( `${name}은 ${activity}.` )
+    }
+
+    logActivity()
+
+</script>	
+</body>
+</html>

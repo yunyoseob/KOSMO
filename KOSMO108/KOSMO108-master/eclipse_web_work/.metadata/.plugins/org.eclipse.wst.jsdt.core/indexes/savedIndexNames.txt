@@ -1,0 +1,9 @@
+INDEX VERSION 1.4+C:\00.KOSMO108\30.Web\eclipse_web_work\.metadata\.plugins\org.eclipse.wst.jsdt.core\indexes
+3004671895.index
+138204587.index
+2419974274.index
+3814979622.index
+4255167429.index
+3032850555.index
+2753710213.index
+1781087297.index

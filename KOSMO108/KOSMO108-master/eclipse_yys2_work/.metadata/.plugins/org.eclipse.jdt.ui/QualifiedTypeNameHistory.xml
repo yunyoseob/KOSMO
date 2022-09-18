@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.sql.BoardSqlMap"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.dao.BoardDAOImpl"/>
+<fullyQualifiedTypeName name="a.b.c.common.ChabunQuery"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.service.BoardService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.service.BoardServiceImpl"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.vo.BoardVO"/>
+<fullyQualifiedTypeName name="javax.servlet.RequestDispatcher"/>
+<fullyQualifiedTypeName name="java.io.PrintWriter"/>
+<fullyQualifiedTypeName name="a.b.c.common.EncryptSHA"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.dao.BoardDAO"/>
+<fullyQualifiedTypeName name="java.util.ArrayList"/>
+<fullyQualifiedTypeName name="java.sql.Connection"/>
+<fullyQualifiedTypeName name="java.sql.CallableStatement"/>
+<fullyQualifiedTypeName name="java.util.HashMap"/>
+</qualifiedTypeNameHistroy>

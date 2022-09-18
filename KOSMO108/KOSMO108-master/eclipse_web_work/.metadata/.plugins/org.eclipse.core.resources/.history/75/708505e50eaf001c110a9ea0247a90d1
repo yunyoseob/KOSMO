@@ -1,0 +1,25 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="a.b.c.t6.servie.T6Service" %>
+<%@ page import="a.b.c.t6.servie.T6ServiceImpl" %>
+<%@ page import="a.b.c.t6.vo.T6VO" %>      
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TEST_T6 UPDATE OK</title>
+</head>
+<body>
+	<h3>TEST_T6 UPDATE OK</h3>
+	<hr>
+<%
+
+
+
+
+
+
+
+%>
+</body>
+</html>

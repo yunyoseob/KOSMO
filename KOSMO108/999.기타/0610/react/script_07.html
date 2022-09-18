@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Default Parameters</h1>
+<p>Open the console</p>
+<script type="text/babel">
+
+    var defaultPerson = {
+      name: {
+        first: "건희",
+        last: "전"
+      },
+      favActivity: "헬스"
+    }
+
+    function logActivity(p=defaultPerson) {
+      console.log(`${p.name.first}은(는) ${p.favActivity}를 좋아합니다.`)
+    }
+
+    logActivity()
+
+</script>
+</body>
+</html>

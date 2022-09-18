@@ -1,0 +1,53 @@
+20220127 강의노트(YYS)
+
+26일과 27일에 배운 것을 생각해보면
+
+javac -d. HelloPackage.java 명령어를 입력하고
+
+java a.b.c.HelloPackage 명령어를 입력하면 내용이 실행이 된다.
+
+그런데 .class 파일은 어디에 있을까?
+
+26일 수업 때 내용을 생각해보면, 
+
+dir /w 파일이름.class 로 찾아봤지만,
+
+package 경로가 생기면 바로 검색해서는 나오지 않는다.
+
+예시 1)
+dir /w a.b.c.HelloPackage.class -> 오류
+
+dir /w HelloPackage.class -> 오류
+
+이럴 때는 cd 명령어로 해당 디렉토리로 넘어가서 검색하면 나온다.
+
+cd a -> cd b -> cd c -> dir /w HelloPackage.class
+
+##############
+
+public class HelloPack_1{
+
+	public static void main(String args[]){
+		
+		System.out.println("패키지는 디렉토리이다");
+	}
+}
+
+: 여기서 public은 접근 제어자 이다.
+
+public이 여기서 하는 일은 다른 패키지 안에 있는 클래스를 불러서 사용하고 싶을 때,
+ex) import a.b.c.A 형태로 불러서 사용하는 걸 가능하게 해주는 클래스이다.
+
+
+
+
+
+
+
+
+
+
+
+
+
+

@@ -1,0 +1,26 @@
+2022-06-17
+-----------------------------
+
+React 개발방법 :: 1.Babel 컴파일러 2.SPA create-react-app(컴포넌트) 3. React+node.js 4.다른컴포넌트
+--------------------
+
+1. React : HTML
+		 : 뷰를 만들기 위한 라이브러리
+
+2. ReactDOM : DOM TREE(가상 DOM, 일부만 만든다, 변경 된 부분만 돔트리로 만든다.)
+			: UI를 실제로 브라우저에 렌더릴 할 때 사용하는 라이브러리(랜더링 라이브러리)
+
+3. unpkg에서 CDN : 바벨
+
+4. SPA : AJAX가 생기면서 단일 페이지 애플리케이션이 생겼다.
+4.1    : 사용자는 사이트를 이동하는 것 처럼 보이지만, 실제로는 같은 페이지 안에 계속 머문다.
+4.2    : 자바스크립트는 사용자가 어플리케이션과 상호작용하는 것에 맞춰 표시중이던 인터페이스를 없애고, 새로운 동적페이지를 만든다.
+
+3. document.createElement. : 만들기
+4. document.appendChild : 붙이기
+className
+"SPA" : Single Page Application : 요청 시 응답페이지가 나에게로(req,res가 한 페이지에!) 'like' Ajax(XMLHttpRequest) + aync/await
+
+보낼 때는 : 포워드, 리다이렉트
+부를 때는 : 인클루드
+

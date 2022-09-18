@@ -1,0 +1,26 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<!-- jQuery CDN 불러오기  -->
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		document.body.mydata={title:'리터럴 객체'};
+		alert(document.body.mydata.title);
+		var ju={
+				"name":"전건희",
+				"age":27,
+				""
+				
+		}
+	});
+</script>
+</head>
+<body>
+
+</body>
+</html>

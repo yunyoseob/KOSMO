@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+<style media="screen">
+    #container {
+        display: flex;
+        justify-content: space-around;
+    }
+
+  	#container>div {
+      	height: 5em;
+      	width: 5em;
+      	background-color: purple;
+  	}       
+</style>
+</head>
+<body>
+<h3>박스를 클릭하세요</h3>
+<div id="container"></div>
+
+<script type="text/babel">
+
+	let div,
+		constainer = document.getElementById('container');
+		
+	for (let i=0; i < 5; i++) {
+		div = document.createElement('div');
+		div.onclick = function() {
+			alert('이것은 박스 #' + i + '입니다.');
+		}
+		container.appendChild(div);
+	}	
+		
+</script>
+</body>
+</html>

@@ -1,0 +1,115 @@
+2022-04-25
+------------------------------
+
+남은 3개월 강의 순서
+
+1. Servlet	
+	MODEL II + MVC
+2. Ajax, JSON
+3. Spring, Mybatis
+	jstl, el 
+	Spring WEB MVC + Mybatis Framework 
+------------------------------
+4. react(바벨, 컴포넌트), vue
+==============================
+5. python
+6. Android
+7. BigData
+
+1/24일 --> 4/25일
+
+취업관련 :	4번까지 
+			5번 어드밴티지	-	회사에서는 안드로이드, iOS 개발자 1 ~ 2명 
+
+============================================
+서블릿 Servlet : Server + Applet
+============================================
+
+1. servlet-api.jar 라이브러리 jdk 에 포팅하기 
+---------------------------------------------------------
+C:\Program Files\Apache Software Foundation\Tomcat 8.5\lib\servlet-api.jar
+C:\Program Files\Java\jdk1.8.0_202\jre\lib\ext\servlet-api.jar <-- 카피
+
+
+2. 서블릿 코드 서블릿 마법사로 생성하기
+---------------------------------------------------------
+Java Resources - src - 우클릭 - New - 패키지생성
+- 패키지 우클릭 - Servlet : Servlet 마법사 실행 -
+
+Class name: HelloServlet - Next
+
+URL mappings - Edit.. 버튼 클릭 - 
+Pattern: /abc - OK 클릭 - Next -
+	Domain은 대소문자를 구분하지 않지만 URL은 대소문자를 구분한다.
+
+Which method stubs would you like to create? 
+불필요한 코드 삭제 하고 - Finish 
+
+Context - Deployment Descripter:kosMember -
+Servlet Mappings
+	/abc -> HelloServlet
+Servlets
+	HelloServlet
+
+
+3. 서블릿 실행 
+---------------------------------------------------------
+	서블릿은 WAS Server 영역에 있는 자바 클래스로 클라이언트에서 
+	직접 URL 으로 요청할 수 없다.
+	서블릿 파일이 있는 위치를 가상경로(URL) 매핑하여 요청해야 한다.
+	WEB-INF 경로 하위는 
+	서버 영역으로 클라이언트에서 직접 요청할 수 없다.
+
+3.1 웹 서블릿 어노테이션 매핑 WebServlet Anotation Mapping
+javax.servlet.annotation.WebServlet 
+
+helloServlet.html 
+	<form acton="/Context/abc" method="GET"
+
+@WebServlet("/abc")
+public class HelloServlet extends HttpServlet {
+
+HelloServlet.java - HelloServlet.class
+
+init() - service() - doGet() - destroy()
+
+
+3.2 서블릿 url 매칭 Servlet URL Mapping
+web.xml 서블릿 매핑 Servlet Mapping 수동 설정
+---------------------------------------------------------
+WebContent - WEB-INF - web.xml
+
+<!-- Servlet Class 정의 -->
+<servlet>
+	<display-name>HelloServlet</display-name>
+	<servlet-name>HelloServlet</servlet-name>
+	<servlet-class>HelloServlet</servlet-class>
+</servlet>
+
+<!-- Servlet Mapping 설정 -->
+<servlet-mapping>
+	<servlet-name>HelloServlet</servlet-name>
+	<url-pattern>/abc.do</url-pattern>
+</servlet-mapping>
+
+
+helloServlet.html 
+	<form acton="/Context/abc" method="GET"
+
+WEB-INF/web.xml
+	<url-pattern>/abc.do</url-pattern>
+
+
+4. 서블릿 포워드 foward
+---------------------------------------------------------
+포워드 기능
+	하나의 서블릿에서 다른 서블릿 또는 JSP와 연동하는 방법
+포워드 용도 
+	요청 request에 대한 추가 작업을 다른 서블릿, JSP에게 수행하게 하는 것
+포워드 방법
+	dispatch 방법
+		javax.Servlet.RequestDispatcher.forward() 
+		요청 request에 포함된 정보를 forward하는 서블릿, JSP와 같이 공유 함
+	redirect 방법
+		javax.servlet.Http.HttpServletRequest.sendRedirect()
+		웹 브라우저에 재요청하는 방식

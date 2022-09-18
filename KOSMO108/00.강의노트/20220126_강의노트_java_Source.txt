@@ -1,0 +1,114 @@
+2022-01-26
+--------------------------
+
+자바 소스 : 자바 소스 구성원
+--------------------------------
+
+public class Hello {
+
+	public static void main(String args[]) {
+	
+		System.out.println("Hello Java");
+	}
+}
+
+
+
+1. 예약어 : 키워드 keyword : 기능이 있는 ?? : 50개
+	자바에서 만들어진 것만 사용해야 한다.
+	키워드의 기능을 공부하는 것 
+	public 
+	class
+	static
+	void 
+
+	https://docs.oracle.com/javase/tutorial/java/nutsandbolts/_keywords.html
+	Java Language Keywords
+	Here is a list of keywords in the Java programming language. 
+	You cannot use any of the following as identifiers in your programs. 
+	The keywords const and goto are reserved, even though they are not currently used. true, false, and null might seem like keywords, but they are actually literals; you cannot use them as identifiers in your programs.
+
+	abstract	continue	for			new			switch
+	assert***	default		goto*		package		synchronized
+	boolean		do			if			private		this
+	break		double		implements	protected	throw
+	byte		else		import		public		throws
+	case		enum****	instanceof	return		transient
+	catch		extends		int	short	try
+	char		final		interface	static		void
+	class		finally		long		strictfp**	volatile
+	const*		float		native		super		while
+	
+	*	 	not used
+	**	 	added in 1.2
+	***	 	added in 1.4
+	****	 	added in 5.0
+
+2. 기호, 문자, 문자상수
+	자바에서 특정한 기능으로 사용해야 한다.
+	C:\00.KOSMO108\80.자료\Java_기초_v0.4.pptx 
+	23 ~ 24쪽, 31쪽
+
+	{ } ( ) [] .  "" ;
+
+3. 빌트인 리소스(클래스, 인터페이스, 상수, 함수 ....)
+	자바에서 만들어놓은 자원이다. 
+	자원의 기능을 숙지하고 사용해야 한다.
+	API 를 보고 사용해야 한다. 
+	https://docs.oracle.com/javase/8/docs/api/
+
+	String 
+	System
+	out
+	println()
+
+	main() : 자바에서 콘솔 어플리케이션에서만 사용하는 특수한 자원이다. (절대 수정하거나 바꾸지 말 것 프로그램 망가짐.)
+
+4. 식별자 : identifier
+	개발자가 맘대로 만들어서 사용해야 한다.
+		클래스 이름 : Hello : 클래스 이름의 첫번째 글자를 꼭 대문자로 써야된다.
+		메소드 이름 : main() : 메소드 이름의 첫번째 글자는 꼭 소문자로 써야된다.
+		변수 이름 : args : 변수 이름의 첫번째 글자는 꼭 소문자로 써야된다.
+	Hello
+	args
+
+
+=======================
+자바 소스 구성 규칙
+=======================
+
+1. 1번, 2번, 3번은 글자를 똑같이 써야 한다.
+	키워드, 기호, 문자, 문자상수, 클래스 자원  등
+2. 4번은 맘대로 사용해도 된다. 
+	단. 클래스이름과 파일로 저장되는 이름은 꼭 똑같이 저장해야 한다. 
+
+
+HelloSource.java 
+C:\00.KOSMO108\10.JExam\HelloSource.java 
+
+import java.lang.String;
+import java.lang.System;
+- 보통 필요한 모듈이 있으면 해당 모듈을 import 해서 사용하지만
+- 자바에서는 java.lang에 대해 쓸 일이 많음.
+- 따라서, java.lang 같은 경우 이미 프로그램 안에 내장 되어 있음. 
+(궁금하면 bin 파일 뜯어보면 ~~~.class 이렇게 이미 다 구성이 되어 있다.)
+- 따라서 import 하지 않아도 아무 문제가 없다.
+
+
+public class HelloSource{
+
+	String s;
+	int i;
+
+	public static void main(String args[]){
+	
+		System.out.println("Hello Source");
+		System.out.println("인터프리트 방식");
+	}
+}
+
+- 가장 중요한 것은 블록 구조임.
+- 첫 번째의 경우 class에서 { 인 left brace부터 }인 right brace까지 98번에서 108번까지가 가장 큰 블록이다.
+- 두 번째의 경우 함수에서 {인 left brace부터 }인 right brace까지 103번부터 107번까지가 그 안에 있는 블록이다.
+- 자바는 스코프 언어이자 블록 언어이므로, 블록 구조에 대해 명확한 이해가 있어야만 한다.
+- 블록이 너무 길 경우에는 Ctrl + } 명령어로 블록의 끝을 한 번에 파악 할 수 있다.

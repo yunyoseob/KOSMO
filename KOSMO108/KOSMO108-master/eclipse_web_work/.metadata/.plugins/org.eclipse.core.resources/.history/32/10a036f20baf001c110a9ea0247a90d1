@@ -1,0 +1,43 @@
+<%@ page language="java" contentType="text/html; charset=UTF-8"
+    pageEncoding="UTF-8"%>
+<%@ page import="a.b.c.t6.servie.T6Service" %>
+<%@ page import="a.b.c.t6.servie.T6ServiceImpl" %>
+<%@ page import="a.b.c.t6.vo.T6VO" %>
+<%@ page import="java.util.ArrayList" %>
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>TEST_T6 SELECT NUM</title>
+<script src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+
+	$(document).ready(function(){
+		
+		
+		
+		
+	}) // $(document).ready(function(){
+</script>
+</head>
+<body>
+<h3 align="center">TEST_T6 SELECT NUM</h3>
+<hr>
+<form name="form_t6_update_ok" id="form_t6_update_ok">
+<table border="1" align="center">
+<%
+	String t1=request.getParameter("t1");
+	
+
+
+%>
+
+
+
+</table>
+</form>
+
+
+
+</body>
+</html>

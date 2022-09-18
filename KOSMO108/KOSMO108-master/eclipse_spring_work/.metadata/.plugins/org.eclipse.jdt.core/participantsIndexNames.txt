@@ -1,0 +1,13 @@
+INDEX VERSION 1.131
+C:\00.KOSMO108\30.Web\eclipse_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3937889366.index
+\testSpring\src
+C:\00.KOSMO108\30.Web\eclipse_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\4112220980.index
+\empSpring\src
+C:\00.KOSMO108\30.Web\eclipse_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\480720474.index
+\testSpring\src
+C:\00.KOSMO108\30.Web\eclipse_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2444438297.index
+\testSpring\src
+C:\00.KOSMO108\30.Web\eclipse_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3144422031.index
+\empSpring\src
+C:\00.KOSMO108\30.Web\eclipse_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3433715023.index
+\testSpring\src

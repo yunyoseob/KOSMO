@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Classes</title>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Classes</h1>
+<p>Open the console</p>
+<script type="text/babel">
+
+    // 이전 방식으로 생성자를 만들고 프로토타입 설정하기
+
+    function Vacation(destination, length) {
+      this.destination = destination
+      this.length = length
+    }
+
+    Vacation.prototype.print = function() {
+      console.log(this.destination + "은(는) " + this.length + "일 걸립니다.")
+    }
+
+    var maui = new Vacation("마우이", 7)
+
+    maui.print()
+
+    // 클래스를 사용해 정의하는 새로운 방식
+
+    class Vacation_1 {
+
+      constructor(destination_1, length_1) {
+        this.destination_1 = destination_1
+        this.length_1 = length_1
+      }
+
+      print_1() {
+        console.log(this.destination_1 + "은(는) " + this.length_1 + "일 걸립니다.")
+      }
+
+    }
+
+    const trip_1 = new Vacation_1("칠레 산티아고", 9)
+
+    trip_1.print_1()
+
+
+    // 상속
+
+    class Vacation_2 {
+     
+      constructor(destination_2, length_2) {
+        this.destination_2 = destination_2
+        this.length_2 = length_2
+      }
+
+      print_2() {
+        console.log(this.destination_2 + "은(는) " + this.length_2 + "일 걸립니다.")
+      }
+
+    }
+
+    class Expedition extends Vacation_2 {
+      
+      constructor(destination_2, length_2, gear) {
+        super(destination_2, length_2)
+        this.gear = gear
+      }
+
+      print_2() {
+        super.print_2()
+        console.log(`당신의 ${this.gear.join("와(과) 당신의 ")}를(을) 가져오십시오.`)
+      }
+    }
+
+    const trip_2 = new Expedition(
+     
+      "한라산",
+      3,
+      ["선글라스", "오색 깃발", "카메라"]
+    )
+
+    trip_2.print_2()
+
+
+</script>
+</body>
+</html>

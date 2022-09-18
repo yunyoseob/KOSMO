@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>URL 소스 넘기기</title>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<!-- jQuery CDN 을 사용해서  param_A.jsp 파일을 만들어서 jQuery click 함수를 이용해서 전송하기-->
+
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("jQuery ready 함수 진입 >>> : ");
+		$("#btn").click(function(){
+			console.log("btn 클릭 >>> : ");
+			$("#urlform").attr({
+				"action":"/kosMember_YYS/practice/urlCopy.jsp",
+					// http://localhost:8088/kosMember_YYS/practice/urlCopy.jsp
+				"method":"GET"
+			}).submit();
+		});
+	});
+</script>
+
+<style type="text/css">
+h3, form{
+	height:100px;
+	margin:10px auto;
+	text-align:center;
+	font-size:25px;
+}
+
+input{
+	height:20px;
+	width:150px;
+	margin:5px;
+}
+
+body{
+	background-color:#ffffcc;
+}
+
+#btn{
+	height:20px;
+	width:150px;
+	margin:5px;
+    background-color: #df80ff;
+}
+</style>
+
+</head>
+<body>
+
+<h2>URL 소스 넘기기</h2>
+
+<form id="urlform" name="urlform">
+	URL : <input type="text" id="inputurl" name="inputurl" placeholder="url을 입력하세요"/><br>
+		  <input type="button" id="btn" value="입력하기" />
+</form>
+
+</body>
+</html>

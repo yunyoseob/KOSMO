@@ -1,0 +1,5 @@
+2022-06-13
+
+beautifulsoup
+셀렉터로 찾을 땐 select()
+태그로 찾을 땐 find()

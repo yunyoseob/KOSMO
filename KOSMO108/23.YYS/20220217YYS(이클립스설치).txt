@@ -1,0 +1,71 @@
+20220217
+
+1. 이클립스 홈페이지로 들어간다.
+
+https://www.eclipse.org/
+
+
+2. 우측 상단에 download를 누른다.
+
+https://www.eclipse.org/downloads/
+
+3. Get Eclipse IDE 2021-12 아래에 Download Packages를 누른다. 
+(2020년 6월 버전으로 가세요)
+
+https://www.eclipse.org/downloads/packages/
+
+4. 아래 홈페이지에서 
+
+https://www.eclipse.org/downloads/packages/release/2020-06/r
+
+4. Eclipse IDE for Enterprise Java Web Devlopers
+
+Windows x86_64를 누른다.
+
+여기서부터는 선택인데 Download를 눌러도 되고
+
+아래에 Select Another Mirror를 눌러도 괜찮다.
+
+Choose a mirro close to you 아래에 명단을 보고 골라도 된다.
+
++
+
+5. 파란색 상자 안에 Download Windows x86_64 눌러야 한다.
+
+https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-06/R/eclipse-inst-win64.exe
+
+
+Choose a mirror close to you
+
+에서 japan Yamgata University 누르셈
+
+https://www.eclipse.org/downloads/download.php?file=/oomph/epp/2020-06/R/eclipse-inst-win64.exe&mirror_id=1287
+
+00.KOSMO -> 90.Download -> eclipse 에 저장
+
+.exe 실행
+
+web, java : Eclipse IDE for Enterprise Java Developers
+클릭!!
+
+
+6. 
+
+10.JExam\10.javaTest
+
+폴더 만들고 Installation Folder에 10.JExam\10.javaTest 경로지정해서
+설치하면 됨.
+
+remember check하고 Accept
+
+Browse눌러
+10.JExam > 10.javaTest > javaProject_1 폴더 선택
+
+아래 좌측 하단에 완료 뜰 때까지 얌전히 기다리셈.
+
+
+
+
+
+
+

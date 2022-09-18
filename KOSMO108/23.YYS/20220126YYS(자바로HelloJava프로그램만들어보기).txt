@@ -1,0 +1,270 @@
+2022-01-26
+-------------------------------
+
+ÀÚ¹Ù·Î HelloJava ÇÁ·Î±×·¥ ¸¸µé¾îº¸±â
+
+ÀÚ¹ÙÇÁ·Î±×·¥ ¸¸µé ¶§ ÇÊ¿äÇÑ µµ±¸
+1. jdk: jdk 1.8
+2. ÆíÁý±â: ¿¡µðÆ® ÇÃ·¯½º
+3. ½ÇÇàµµ±¸: MS DOS, console
+4. API:
+
+ÀÚ¹ÙÇÁ·Î±×·¥ ¸¸µé±â
+----------------------------
+1. ÀÚ¹ÙÇÁ·Î±×·¥ È®ÀåÀÚ´Â .java (´ë¹®ÀÚ½áµµ Àß µ¹¾Æ°¡Áö¸¸, ¼Ò¹®ÀÚ·Î ÇÏÀÚ)
+	ÀÚ¹ÙÇÁ·Î±×·¥ÀÌ¸§ .java 
+
+2. ÆíÁý±â¿¡¼­ ÀÚ¹Ù ¼Ò½º·Î ÀÚ¹Ù ÇÁ·Î±×·¥À» ¸¸µç´Ù.
+3. È®ÀåÀÚ¸¦ .java·Î ÀúÀåÇÑ´Ù.
+4. ÀÚ¹ÙÇÁ·Î±×·¥À» javac.exe ¸í·É¾î·Î ÄÄÆÄÀÏÇÑ´Ù.
+	ÄÄÆÄÀÏÀÌ ¼º°øµÇ¸é ÀÚ¹Ù ÇÁ·Î±×·¥ÀÌ¸§.class ÆÄÀÏÀ» »ý¼ºÇÑ´Ù.
+	javac ÀÚ¹ÙÇÁ·Î±×·¥ÀÌ¸§.java (javac µÚ¿¡ ÇÑ Ä­ ¹Ýµå½Ã ¶ç¾î¾²±â ÇØ¾ßÇÔ.)
+	-> ÀÚ¹ÙÇÁ·Î±×·¥ÀÌ¸§.class
+5. ÄÄÆÄÀÏµÈ ÆÄÀÏÀ» java.exe ¸í·É¾î·Î ½ÇÇàÇÑ´Ù.
+	´Ü java ¸í·É¾î·Î ½ÇÇàÇÒ ¶§´Â ÀÚ¹ÙÇÁ·Î±×·¥ÀÌ¸§¸¸ »ç¿ëÇÑ´Ù.
+	java ÀÚ¹ÙÇÁ·Î±×·¥ ÀÌ¸§
+
+
+ÇÃ·§Æû platform
+-----------------
+À©µµ¿ì ¸Æ ¸®´ª½º
+À¯´Ð½º
+> IBM À¯´Ð½º, HP À¯´Ð½º, ¿À¶óÅ¬ ¼Ö¶ó¸®½º....
+
+p.19 ±³Àç
+
+
+
+ÄÄÆÄÀÏ·¯ ??
+---------------------
+ÇÁ·Î±×·¥ ¾ð¾î¸¦ ÄÄÇ»ÅÍ°¡ ¾Ë¾Æº¼ ¼ö ÀÖ°Ô ¹Ù²Ù´Â °Í
+
+javac.exe ½ÇÇàÆÄÀÏ: ÄÄÆÄÀÏ·¯
+ÀÚ¹Ù ¾ð¾î¸¦ ÀÚ¹Ù °¡»ó¸Ó½Å(ÀÚ¹Ù ¹ö«x¸Ó½Å, JVM)ÀÌ ¾Ë¾Æº¼ ¼ö ÀÖ°Ô
+¹Ù²Ù´Â °Í : ¹ÙÀÌÆ® ÄÚµå
+
+1. dir /w HelloJava.java
+help dirÀ» ÃÄº¸¸é
+/w´Â °¡·Î ¸ñ·Ï Çü½ÄÀ» »ç¿ëÇÑ´Ù°í ¼³¸í µÇ¾î ÀÖ´Ù.
+/dÀÇ °æ¿ì, ³»¿ëÀÌ ±æ¾îÁö¸é, ¼¼·Î ¸ñ·ÏÀ» ¼³¸íÇÑ´Ù.
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>dir/w HelloJava.java
+ C µå¶óÀÌºêÀÇ º¼·ý: system
+ º¼·ý ÀÏ·Ã ¹øÈ£: B2DB-7002
+
+ C:\00.KOSMO108\10.JExam µð·ºÅÍ¸®
+
+HelloJava.java
+               1°³ ÆÄÀÏ                 950 ¹ÙÀÌÆ®
+               0°³ µð·ºÅÍ¸®  196,588,273,664 ¹ÙÀÌÆ® ³²À½
+
+2. HelloJava.java ÆÄÀÏ ³»¿ë º¸±â
+
+¿¡µðÅÍ¿¡ ÀÖ´Â HelloJavaÀÇ ³»¿ëÀ» º¼ ¼ö ÀÖ´Ù.
+cmd¿¡¼­ ÀÛ¾÷ÇÒ ¶§, ³»°¡ ÀÛ¾÷ÇÑ ÆÄÀÏÀÇ ·ÎÁ÷ÀÇ ¹®Á¦¸¦ Ã¼Å©ÇÒ ¶§,
+¹ø°Å·Ó°Ô ¿¡µðÅÍÃ¢ Å°°í ¾È ºÁµµ µÉ µí.
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>type HelloJava.java
+
+// HelloJava.java ÇÁ·Î±×·¥ ¸¸µé±â
+// HelloJava ÇÁ·Î±×·¥Àº ÄÜ¼Ö¿¡ "¾È³ç ÀÚ¹Ù" ¹®ÀÚ¿­À» Ãâ·ÂÇÏ±â ÇÁ·Î±×·¥ÀÌ´Ù.
+
+// HelloJava.java ÇÁ·Î±×·¥Àº C:\00.KOSMO108\10.JExam Æú´õ¿¡ ÀúÀåÇÑ´Ù.
+
+public class HelloJava {
+
+        public static void main(String args[]){
+
+                System.out.println("¾È³ç ÀÚ¹Ù");
+        }
+}
+
+/*
+1. HelloJava ÇÁ·Î±×·¥À» ÆíÁý±â¿¡¼­ ¸¸µç´Ù.
+
+2. HelloJava ÇÁ·Î±×·¥À» .java È®ÀåÀÚ·Î ÀúÀåÇÑ´Ù.
+
+3. HelloJava ÇÁ·Î±×·¥À» ÄÄÆÄÀÏ ÇÏ±â À§ÇØ¼­
+        HelloJava.java ÇÁ·Î±×·¥ÀÌ ÀÖ´Â Æú´õ¸¦ Ã£¾Æ°£´Ù.
+        C:\00.KOSMO108\10.JExam\HelloJava.java
+        ÄÜ¼ÖÃ¢¿¡¼­ ÇØ´ç µð·ºÅä¸®±îÁö Ã£¾Æ°£´Ù.
+
+        javac ¸í·É¾î·Î ÄÄÆÄÀÏ ÇÑ´Ù.
+        C:\00.KOSMO108\10.JExam>javac ÇÁ·Î±×·¥ÀÌ¸§.È®ÀåÀÚ
+        C:\00.KOSMO108\10.JExam>javac HelloJava.java
+
+
+        ÄÄÆÄÀÏÀÌ Àß µÇ¸é
+        C:\00.KOSMO108\10.JExam>dir HelloJava.class
+
+4. HelloJava.class È­ÀÏÀ» java ¸í·É¾î·Î ½ÇÇàÀ» ÇÑ´Ù.
+
+        C:\00.KOSMO108\10.JExam>java ÇÁ·Î±×·¥ÀÌ¸§¸¸
+        C:\00.KOSMO108\10.JExam>java HelloJava
+        ¾È³ç ÀÚ¹Ù
+*/
+
+3. javac ÄÄÆÄÀÏ·¯ ¸í·É¾î·Î HelloJava.java ÄÄÆÄÀÏ ÇÏ±â
+ÄÄÆÄÀÏÀÌ ¼º°øÇÏ¸é HelloJava.class Å¬·¡½º ÆÄÀÏÀÌ »ý¼º µÈ´Ù.
+
+dir /w ÆÄÀÏ.class ¸¶Áö¸·ÀÌ .classÀÎ °Å ÀØÁö¸»±â!
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>javac HelloJava.java
+
+C:\00.KOSMO108\10.JExam>dir/w HelloJava.class
+ C µå¶óÀÌºêÀÇ º¼·ý: system
+ º¼·ý ÀÏ·Ã ¹øÈ£: B2DB-7002
+
+ C:\00.KOSMO108\10.JExam µð·ºÅÍ¸®
+
+HelloJava.class
+               1°³ ÆÄÀÏ                 425 ¹ÙÀÌÆ®
+               0°³ µð·ºÅÍ¸®  196,587,548,672 ¹ÙÀÌÆ® ³²À½
+
+4. ¹ÙÀÌÆ® ÄÚµå: Ljava/lang/String ??
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>type HelloJava.class
+Êþº¾4
+      
+<init>()VCodeLineNumberTablemain([Ljava/lang/String;)V
+?ˆë…• ?ë°”HelloJava.java
+
+
+5. ½ÇÇàÇÏ±â µÚ¿¡ .exe ÀÌ·±°Å ¾È ºÙÀÎ´Ù!
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>java HelloJava
+¾È³ç ÀÚ¹Ù
+
+6. ¿ªÄÄÆÄÀÏ
+HelloJava.java ÆÄÀÏÀÇ String args[]°¡
+¿ªÄÄÆÄÀÏÀ» ÇÏ´Ï±î java.lang.String[]À¸·Î ¹Ù²ï °ÍÀ» È®ÀÎ
+ÇÒ ¼ö ÀÖ´Ù.
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>javap HelloJava
+Compiled from "HelloJava.java"
+public class HelloJava {
+  public HelloJava();
+  public static void main(java.lang.String[]);
+}
+
+7. ¼¼ºÎ³»¿ë º¸±â
+
+Methodref, Class, Utf8 µîµî Constant poolÀ» È®ÀÎ
+ÇÒ ¼ö ÀÖ´Ù.
+----------------------------------------------
+C:\00.KOSMO108\10.JExam>javap -verbose HelloJava
+Classfile /C:/00.KOSMO108/10.JExam/HelloJava.class
+  Last modified 2022. 1. 26; size 425 bytes
+  MD5 checksum d647fbd85ad43a1a6efaa18c164a2270
+  Compiled from "HelloJava.java"
+public class HelloJava
+  minor version: 0
+  major version: 52
+  flags: ACC_PUBLIC, ACC_SUPER
+Constant pool:
+   #1 = Methodref          #6.#15         // java/lang/Object."<init>":()V
+   #2 = Fieldref           #16.#17        // java/lang/System.out:Ljava/io/PrintStream;
+   #3 = String             #18            // ¾È³ç ÀÚ¹Ù
+   #4 = Methodref          #19.#20        // java/io/PrintStream.println:(Ljava/lang/String;)V
+   #5 = Class              #21            // HelloJava
+   #6 = Class              #22            // java/lang/Object
+   #7 = Utf8               <init>
+   #8 = Utf8               ()V
+   #9 = Utf8               Code
+  #10 = Utf8               LineNumberTable
+  #11 = Utf8               main
+  #12 = Utf8               ([Ljava/lang/String;)V
+  #13 = Utf8               SourceFile
+  #14 = Utf8               HelloJava.java
+  #15 = NameAndType        #7:#8          // "<init>":()V
+  #16 = Class              #23            // java/lang/System
+  #17 = NameAndType        #24:#25        // out:Ljava/io/PrintStream;
+  #18 = Utf8               ¾È³ç ÀÚ¹Ù
+  #19 = Class              #26            // java/io/PrintStream
+  #20 = NameAndType        #27:#28        // println:(Ljava/lang/String;)V
+  #21 = Utf8               HelloJava
+  #22 = Utf8               java/lang/Object
+  #23 = Utf8               java/lang/System
+  #24 = Utf8               out
+  #25 = Utf8               Ljava/io/PrintStream;
+  #26 = Utf8               java/io/PrintStream
+  #27 = Utf8               println
+  #28 = Utf8               (Ljava/lang/String;)V
+{
+  public HelloJava();
+    descriptor: ()V
+    flags: ACC_PUBLIC
+    Code:
+      stack=1, locals=1, args_size=1
+         0: aload_0
+         1: invokespecial #1                  // Method java/lang/Object."<init>":()V
+         4: return
+      LineNumberTable:
+        line 7: 0
+
+  public static void main(java.lang.String[]);
+    descriptor: ([Ljava/lang/String;)V
+    flags: ACC_PUBLIC, ACC_STATIC
+    Code:
+      stack=2, locals=1, args_size=1
+         0: getstatic     #2                  // Field java/lang/System.out:Ljava/io/PrintStream;
+         3: ldc           #3                  // String ¾È³ç ÀÚ¹Ù
+         5: invokevirtual #4                  // Method java/io/PrintStream.println:(Ljava/lang/String;)V
+         8: return
+      LineNumberTable:
+        line 11: 0
+        line 12: 8
+}
+SourceFile: "HelloJava.java"
+
+---------------
+Ãß°¡ÀûÀ¸·Î
+java -verbose HelloJava·Î È®ÀÎÇØº¸¸é
+¸Å¿ì ¸¹Àº ³»¿ëÀÌ Ãâ·ÂµÇ´Âµ¥,
+4¹øÀÇ ¹ÙÀÌÆ® ÄÚµå¿¡¼­ Ljava/lang/String ??
+¿¡¼­ Ljava°¡ Loaded java°¡ ¾Æ´Ñ°¡ ½Í´Ù?
+
+Loaded java.~~~
+
+lang ÀÌ¿Ü¿¡µµ security, util, io, nio µîµî ´Ù¾çÇÔ.
+
+Loaded sun
+misc, reflect, nio µîµî
+(¿¹Àü sun microsystems ÀÎ¼öÇÒ ´ç½Ã sun¿¡ ´ëÇÑ ³»¿ëÀÌ 
+³Ñ¾î¿Âµí?)
+
+ÀÌ ±¸Á¶¸¦ ÀÌÇØÇÏ¸é ³ªÁß¿¡ ¿À·ùÀâÀ» ¶§ ÁÁÀ» µí
+
+--------------------
+
+ÄÄÆÄÀÏ ÇÒ ¶§ »ç¿ëµÇ´Â ÀÚ¿ø
+
+½ÇÇà ÇÒ ¶§ »ç¿ëµÇ´Â ÀÚ¿ø
+
+
+=========================
+2022-01-26
+--------------
+ÀÚ¹Ù ¼Ò½º: ÀÚ¹Ù ¼Ò½º ±¸¼º¿ø
+--------------
+
+public class HelloYYS{
+	public static void main(String args[]){
+		System.out.println("¾È³ç À±¿ä¼·");	
+	} 
+}
+
+1. ¿¹¾à¾î: Å°¿öµå keyword: ±â´ÉÀÌ ÀÖ´Â ??
+2. ±âÈ£, ¹®ÀÚ
+
+3. ºôÆ®ÀÎ ¸®¼Ò½º(Å¬·¡½º .....)
+4. ½Äº°ÀÚ: identifier
+
+---------------
+PPT 23~24ÂÊ, 31ÂÊ ²À ¾Ë¾Æ³ö¾ß ÇÔ. (in 80.ÀÚ·á)
+
+
+
+
+
+

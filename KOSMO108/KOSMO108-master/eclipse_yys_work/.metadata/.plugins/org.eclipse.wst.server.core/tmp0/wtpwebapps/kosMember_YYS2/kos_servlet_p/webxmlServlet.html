@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		console.log("jQurey ready 함수 진입 >>> : ");
+		$("#btn").click(
+			$("#fm").attr({
+				"action":"",
+				"method":"GET",
+				"enctype":"application/x-www-form-urlencoded"
+			}).submit();		
+		);
+	});
+</script>
+</head>
+<body>
+<form class="fm" id="fm" name="fm">
+	MID :: <input type="text" class="mid" id="mid" name="mid" />
+	MPW :: <input type="text" class="mpw" id="mpw" name="mpw" /> 
+	<input type="button" id="btn" value="보내기" />
+</form>
+</body>
+</html>

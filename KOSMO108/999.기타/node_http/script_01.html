@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="UTF-8">
+		<title>Insert title here</title>
+		<!-- 마임이자 네임스페이스 역할(가져오는 위치) -->
+		<script type="text/javascript" src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+	</head>
+	<body>
+		<!-- 
+			ECMAScript3 ES3 : 1999년 : 우리가 이야기 하는 자바스크립트 
+			ECMAScript5 ES5 : 2009년
+			
+			react, vue에서 사용
+			ECMAScript6 ES6 : 2015년 : const, let 키워드 추가, arrow문접 지원 : 지원 브라우저를 확인해야 함
+		 -->
+		<!-- 문자종결 (;) 안 해도 되네! 하지만 로우버전 규칙으로 코딩을 하기 위해 쳐주자. -->
+		<script type="text/babel">
+			var pizza = true;
+			pizza = false;
+			console.log(pizza);
+			
+			const p = true;
+			console.log(p);
+			//p = false;
+			//Uncaught SyntaxError: Inline Babel script: "p" is read-only
+			console.log(p);
+		</script>
+		<!-- type=자바스크립트인 경우와 서로 연동이 안 됨(not defined) -->
+	</body>
+</html>

@@ -1,0 +1,55 @@
+20220324 기억노트
+
+--------------
+
+form 태그
+웹문서(html) 태그로 만든 문서)에서 웹 서버로
+데이터를 요청 할 수 있는 유일한 태그
+
+웹 문서에서 웹 서버로 데이터를 요청할 수 있는 방법 : request
+	
+	 request : 요청
+클라이언트 ------------- 웹 서버
+	 response : 응답
+
+
+1. form 태그
+2. XMLHttpRequest 객체
+3. Ajax ( XMLHttpRequest 객체를 가지고 구글 엔지니어가 만든 형식)
+
+**암기 사항 : 객체 리터럴로 객체 생성하기**
+
+```javascript
+	var card = {suit:"하트", rank:"A"};
+	var card1 = {"suit":"하트", "rank":"A"};
+	객체 리터럴, 리터럴 객체 : {....}
+	변수 card
+	프로퍼티 이름 : suit, "suit"
+	프로퍼티 값 : "하트", "A"
+```
+
+
+오라클 SID 확인하기 
+
+1. 파일로 확인하는 방법
+
+-------------------
+
+```
+C:\app\kosmo\product\11.2.0\dbhome_1\NETWORK\ADMIN
+tnsnames.ora
+listener.ora
+```
+
+2. 쿼리로 확인하는 방법 '/as sysdba', system/비밀번호
+
+---------------------------------------------------
+
+```sql
+?>sqlplus "/as sysdba"
+?>sqlplus system/1234
+
+SQL>SELECT NAME, DB_UNIQUE_NAME FROM v$database;
+NAME      DB_UNIQUE_NAME
+--------- ------------------------------
+ORCLHBE0  orclHBE00

@@ -1,0 +1,4 @@
+#Tomcat publish data
+#Tue May 31 17:11:28 KST 2022
+org.eclipse.jst.jee.server\:/binary\:C\:\\00.KOSMO108\\30.Web\\ecliipse_web_yys2\\eclipse_yys2_work\\kosServlet_YYS\\WebContent\\WEB-INF\\lib\\spring-web-4.3.16.RELEASE.jar=WEB-INF/lib/spring-web-4.3.16.RELEASE.jar
+org.eclipse.jst.jee.server\:/binary\:C\:\\00.KOSMO108\\30.Web\\ecliipse_web_yys2\\eclipse_yys2_work\\kosServlet_YYS\\WebContent\\WEB-INF\\lib\\jasper.jar=WEB-INF/lib/jasper.jar

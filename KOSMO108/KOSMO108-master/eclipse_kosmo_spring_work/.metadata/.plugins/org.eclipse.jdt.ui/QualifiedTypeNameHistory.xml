@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<qualifiedTypeNameHistroy>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.product.service.KosmoProductService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.dao.ChabunDAO"/>
+<fullyQualifiedTypeName name="org.mybatis.spring.SqlSessionTemplate"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.product.dao.KosmoProductDAO"/>
+<fullyQualifiedTypeName name="java.text.DecimalFormat"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.member.service.KosmoMemberService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.product.vo.KosmoProductVO"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.member.dao.KosmoMemberDAO"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.cart.service.KosmoCartService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.NumUtil"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.cart.vo.KosmoCartVO"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.cart.dao.KosmoCartDAO"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.login.service.KosmoLoginService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.member.vo.KosmoMemberVO"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.login.dao.KosmoLoginDAO"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ModelAttribute"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.EncryptSHA"/>
+<fullyQualifiedTypeName name="javax.servlet.http.HttpServletRequest"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.FileUploadUtil"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.CommonUtils"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.service.KosmoBoardService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.vo.KosmoBoardVO"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.board.dao.KosmoBoardDAO"/>
+<fullyQualifiedTypeName name="org.springframework.ui.Model"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.rboard.service.KosmoRboardService"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.service.ChabunService"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMethod"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.RequestMapping"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Controller"/>
+<fullyQualifiedTypeName name="org.springframework.web.bind.annotation.ResponseBody"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.rboard.vo.KosmoRboardVO"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Service"/>
+<fullyQualifiedTypeName name="org.springframework.transaction.annotation.Transactional"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.rboard.dao.KosmoRboardDAO"/>
+<fullyQualifiedTypeName name="org.springframework.stereotype.Repository"/>
+<fullyQualifiedTypeName name="org.springframework.beans.factory.annotation.Autowired"/>
+<fullyQualifiedTypeName name="org.apache.ibatis.session.SqlSession"/>
+<fullyQualifiedTypeName name="java.util.List"/>
+<fullyQualifiedTypeName name="a.b.c.com.kosmo.common.ChabunUtil"/>
+</qualifiedTypeNameHistroy>

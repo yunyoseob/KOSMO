@@ -1,0 +1,165 @@
+2022-05-06
+------------------------------
+
+tomcat 스타트 
+-----------------------------
+1.	server.xml 
+	<Connecter 
+		port="8088" : 클라이언트에서 웹서버로 접속하는 포트 
+		
+		// URIEcoding 속성은 개발자가 추가 한 것임 
+		URIEncoding="UTF-8" : request (요청) 스트림에서 header에 들어오는(GET 방식) 문자중 일부를 UTF-8로 인코딩 하세요
+
+	<Context docBase="kosSpring" path="/losSpring"
+
+2.	web.xml 
+	<session-timeout>30</session-timeout>
+	MIME Type
+
+3.	context.xml	
+	<Resource name="데이터소스이름: 형식은 : jdbc/SID이름"
+		jdbc : JNDI 서비스의 JDBC를 연결하는 설정파일의 메타테이터 이름  
+		jdbc/XXX : XXX <-- SID 이름 
+		jdbc/XXX <-- 데이터 소스 이름 
+		java:comp/env/jdbc <-- JNDI 서비스에서 JDBC 서비스를 하겠다는 메타테이터 이름 
+		
+		java:comp/env
+		/jdbc
+		/SID <-- 데이터 소스 
+
+4.	Context/WEB-INF/web.xml 
+	2번에 있는 web.xml :	web.xml 이 있는 해당 WAS 서버의 모든 컨텍스트에 적용되는 환경설정 파일 
+	4번에 있는 web.xml :	web.xml 이 있는 해당 Context 에 만 적용되는 환경설정 파일 
+		
+		4.1		웰컴 파일 
+		4.2		디스패처 서블릿 
+		4.3		url-pattern
+		4.4		spring-servlet.xml 스프링 프레임워크 환경 설정 파일 불러오기
+		4.5		<session-timeout>30</session-timeout>
+		4.6		한글 인코딩 : POST 방식으로 들어오는 스트림 UTF-8
+		4.7		log4j.xml 불러오기 
+
+5.	Context/WEB-INF/spring-servlet.xml 
+
+		5.1		<mvc:annotation-driven />
+				사용자 정의 콘트롤러를 찾고, 데이터(클라이언트에서 가져온)를 넘겨 주세요
+
+		5.2		<context:component-scan base-package="a.b.c.com.**" /> 
+				a.b.c.com 패키지 하위에 있는 패키지의 클래스 들 							
+				@Controller
+				사용자정의 콘트롤러 클래스 							
+				@Service
+				@Transactional 
+				서비스 인터페이스, 서비스 구현체 클래스 
+				@Repository
+				다오 인터페이스, 다오 구현체 클래스를	
+				메모리에 올리시오
+		
+		5.3		<property name="prefix" value="/WEB-INF/views/"/> 
+				<property name="suffix" value=".jsp"/>
+				컨트롤러에서 abc를 호출하면 /WEB-INF/views/abc.jsp 를 호출합니다
+				머리말 꼬리말 지정
+
+
+1 ~ 5번까지 알고 있어야 하는데 이것을 잘 몰라도 
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+====================================================
+이클립스에서 tocmat 를  서버탭에서 스타트 해서 
+
+1. tomcat 서버가 켜져야 한다. 
+	해당 컨텍스트에 있는 컴포넌트(빈즈, 클래스)는 
+	모두 메모리에 올라와 있어야 한다. 
+	@Controller @Service @Transactional @Repository
+
+2. 콘솔로그에서 url-pattern 을 확인해야 만 한다. 
+====================================================
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+INFO : 
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+Mapped "{[/spring_hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" 
+onto public java.lang.String a.b.c.com.controller.HelloController.hello_spring(org.springframework.ui.Model)
+
+/ <-- Context
+spring_hello <-- url-pattern : 해당 컨텍스트에서 유니크 해야 한다. 
+-> 
+HelloController.hello_spring <-- 해당 하는함수에 url-patter 을 찾아간다. 
+
+INFO : 
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+Mapped "{[/spring_hello_get],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" 
+onto public java.lang.String a.b.c.com.controller.HelloController.hello_spring_get(org.springframework.ui.Model)
+
+/spring_hello_get
+/ <-- Context
+spring_hello_get <-- url-pattern : 해당 컨텍스트에서 유니크 해야 한다. 
+HelloController.hello_spring_get <-- 해당 하는함수에 url-patter 을 찾아간다. 
+
+
+
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+index.jsp : <a href="spring_hello.hbe">Hello 보기 </a>
+
+
+1. <servlet-class>org.springframework.web.servlet.DispatcherServlet</servlet-class>
+
+2. <mvc:annotation-driven />
+3. <context:component-scan base-package="a.b.c.com.**" />
+
+INFO : 
+org.springframework.web.servlet.mvc.method.annotation.RequestMappingHandlerMapping - 
+Mapped "{[/spring_hello],methods=[],params=[],headers=[],consumes=[],produces=[],custom=[]}" 
+onto public java.lang.String a.b.c.com.controller.HelloController.hello_spring(org.springframework.ui.Model)
+
+
+@Controller
+public class HelloController
+
+@RequestMapping(value="spring_hello")
+public String hello_spring(Model model) {
+	logger.info("HelloController.hello_spring() 함수 진입 >>> : ");
+	
+	model.addAttribute("msg", "Hello Spring !!!");
+	logger.info("model >>> : " + model);
+	
+	return "spring_hello_return";
+}
+
+<property name="prefix" value="/WEB-INF/view/"/>
+<property name="suffix" value=".jsp" />
+
+Context/WebContent/WEB-INF/view/spring_hello_return.jsp
+$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$$
+
+
+스프링 웹 엠브시 Spring Web MVC
+------------------------------------
+
+DispatcherServlet
+
+HandlerMapping
+
+Controller
+
+ViewResolver
+
+View
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

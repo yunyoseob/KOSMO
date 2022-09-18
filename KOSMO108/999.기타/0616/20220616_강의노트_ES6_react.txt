@@ -1,0 +1,44 @@
+2022-06-16
+--------------------------
+
+react 에서 사용할 ES6 자바스크립트 문법 : 중요한 것 빼고는 주저리주저리 길게 쓰지 말기
+===============================================
+
+1. const(중요)
+
+2. let (중요)
+
+3. template string 
+
+4. module (중요)
+	ES6
+		export
+		export default
+
+		import xxx from './화일이름'
+
+	CommonJS 
+		exports
+		module.exports
+		
+		require('화일이름');
+
+5. arrow function
+	(파라미터1, 파라미터2.. n) => {}
+
+	호이스팅 : hoisting : +표현식함수가 적용이 안 돼
+
+6. spread operator
+	...변수명
+	first, finish
+	...rest
+
+7. Asynchronous : 깊게 파지마
+	fetch() ~ then() 
+	async / await
+		async () =>  await 함수()
+	new Promise() 
+		pending
+		fulfilled
+		rejected
+		settled

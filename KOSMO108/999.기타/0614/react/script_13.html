@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h1>Destructuring</h1>
+<p>Open the console</p>
+
+<script type="text/babel">
+
+    // 객체 구조분해
+
+    var sandwich =  {
+      bread: "더치 크런치",
+      meat: "참치",
+      cheese: "스위스",
+      toppings: ["상추", "토마토", "머스타드"]
+    }
+
+    var {bread, meat} = sandwich
+
+    console.log(bread, meat)
+
+    bread = "마늘"
+    meat = "칠면조"
+
+    console.log(bread,meat)
+    console.log(sandwich.bread, sandwich.meat)
+
+
+    // 객체를 인자로 받는 함수
+
+    var lordify = regularPerson => {
+      console.log(`캔터베리의 ${regularPerson.firstname}`)
+    }
+
+    var regularPerson = {
+      firstname: "건희",
+      lastname: "전"
+    }
+
+    lordify(regularPerson)
+
+    // 객체 인자 구조분해
+
+    var lordify_1 = ({firstname_1}) =>
+      console.log(`캔터베리의 ${firstname_1}`)
+
+    var regularPerson_1 = {
+      firstname_1: "건원",
+      lastname_1: "박"
+    }
+
+    lordify_1(regularPerson_1)
+
+
+     // 배열 구조분해
+
+    var [firstResort] = ["용평","평창","강촌"]
+
+    console.log(firstResort)
+
+    // 배열 구조 분해(다른 예)
+
+    var [,,thirdResort] = ["용평","평창","강촌"]
+
+    console.log(thirdResort)
+
+</script>
+</body>
+</html>

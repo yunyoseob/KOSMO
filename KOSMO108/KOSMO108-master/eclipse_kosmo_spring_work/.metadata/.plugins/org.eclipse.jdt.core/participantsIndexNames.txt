@@ -1,0 +1,17 @@
+INDEX VERSION 1.131
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1268020762.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3291270898.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2624963210.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2429587419.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\3117061709.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\1841186074.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2575735548.index
+\kosmoSpring_YYS\src
+C:\00.KOSMO108\30.Web\eclipse_kosmo_spring_work\.metadata\.plugins\org.eclipse.jst.jsp.core\jspsearch\2305336464.index
+\kosmoSpring_YYS\src

@@ -1,0 +1,43 @@
+<?xml version='1.0' encoding='UTF-8'?>
+<comment>
+    <result>true</result>
+    <message></message>
+    <total_count>24</total_count>
+    <item>
+        <num>1</num>
+        <writer>
+        	<!-- 씨데이터섹션 -->
+            <![CDATA[김별]]>
+        </writer>
+        <content>
+            <![CDATA[스터디...화이....팅....!!]]>
+        </content>
+        <datetime>
+            <![CDATA[2022-05-03 11:45:42]]>
+        </datetime>
+    </item>
+    <item>
+        <num>2</num>
+        <writer>
+            <![CDATA[성연제]]>
+        </writer>
+        <content>
+            <![CDATA[집에 가고 싶당....]]>
+        </content>
+        <datetime>
+            <![CDATA[2022-05-03 11:45:58]]>
+        </datetime>
+    </item>
+    <item>
+        <num>3</num>
+        <writer>
+            <![CDATA[윤요섭]]>
+        </writer>
+        <content>
+            <![CDATA[놀러가고싶당...~!!!]]>
+        </content>
+        <datetime>
+            <![CDATA[2022-05-03 11:46:03]]>
+        </datetime>
+    </item>
+</comment>

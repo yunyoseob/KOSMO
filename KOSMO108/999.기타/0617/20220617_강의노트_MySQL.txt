@@ -1,0 +1,158 @@
+2022-06-17
+-------------------------------
+
+MySQL : 세팅할 때 포트와 비밀번호를 챙기자!
+https://www.mysql.com/
+
+1. Archives 버전 설치 
+=====================================
+
+https://www.mysql.com/downloads/
+
+하단의 MySQL Community (GPL) Downloads 링크 클릭 
+
+https://dev.mysql.com/downloads/
+MySQL Community Server 링크 클릭 
+Archives 탭 선택 
+Product Version : 5.7.14 버전 선택 -- 보류, 일단 받아놓고 실제는 최상위 버전 받습니다.
+
+cf) 최상위 버전 받는방법 
+Archives 탭 누르짐말고 8.0.29(20220617최상위버전) 
+Windows (x86, 32-bit), MSI Installer 클릭
+No thanks, just start my download. 클릭 
+
+excute해서 필요한거 먼저 받고 default로 인스톨 하고, 
+root password는 1234
+
+
+Windows (x86, 64-bit), ZIP Archive 다운로드
+
+
+cmd, 콘솔을 관리자 버전으로 실행 
+
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>mysqld --initialize
+
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>mysqld --install
+Service successfully installed.
+
+root 비밀번호 위치 : 설치 경로\data\컴퓨터이름.err
+root@localhost:비밀번호 
+2022-06-04T08:41:13.021103Z 1 [Note] A temporary password is generated for root@localhost: iSoY7qh:hgFu
+
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>net start mysql
+
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>mysql -uroot -p
+Enter password: ************
+
+mysql> alter user 'root'@'localhost' identified by '1234';
+Query OK, 0 rows affected (0.00 sec)
+
+
+
+
+2. install 버전 설치 
+=====================================
+https://dev.mysql.com/downloads/
+MySQL Community Server 링크 클릭 
+
+https://dev.mysql.com/downloads/mysql/
+
+Windows (x86, 32 & 64bit), MySQL Installer MSI 클릭
+
+https://dev.mysql.com/downloads/file/?id=511553
+
+아래 No thanks, just start my download 클릭 
+
+
+3. MySQL 서비스 확인
+=====================================
+
+MySQL 서비스 확인해 보기 (있으면 서비스 넘버가 뜹니다)
+-------------------------------
+sc query | find /i "mysql" 
+
+서비스 등록 
+-------------------------------
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>mysqld --install
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>net stop mysql
+C:\00.KOSMO\40.node\mysql-5.7.14-winx64\bin>mysqld --remove
+
+
+4. MySQL 콘솔에서 사용해 보기 : root/1234
+=====================================
+
+C:\Program Files\MySQL\MySQL Server 8.0\bin>mysql -u root -p
+Enter password: ****
+
+mysql>
+mysql> show databases;
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| sakila             |
+| sys                |
+| test               |
+| world              |
++--------------------+
+7 rows in set (0.00 sec)
+
+
+mysql> use test;
+Database changed
+
+
+mysql> select database();
++------------+
+| database() |
++------------+
+| test       |
++------------+
+1 row in set (0.00 sec)
+
+
+mysql> show tables;
++----------------+
+| Tables_in_test |
++----------------+
+| users          |
++----------------+
+1 row in set (0.00 sec)
+
+
+mysql> explain users;
++----------+------+------+-----+---------+-------+
+| Field    | Type | Null | Key | Default | Extra |
++----------+------+------+-----+---------+-------+
+| id       | text | YES  |     | NULL    |       |
+| name     | text | YES  |     | NULL    |       |
+| age      | int  | YES  |     | NULL    |       |
+| password | text | YES  |     | NULL    |       |
++----------+------+------+-----+---------+-------+
+4 rows in set (0.00 sec)
+
+mysql> select * from users;
++--------+--------+------+----------+
+| id     | name   | age  | password |
++--------+--------+------+----------+
+| test01 | 전건희 |   27 | 123456   |
+| test02 | 박건원 |   30 | 1234     |
++--------+--------+------+----------+
+2 rows in set (0.00 sec)
+
+
+mysql> quit;
+Bye
+
+
+
+
+하이디 깔고 실행하면 비밀번호 설정했던거 치고 실행
+좌측에 unnamed에 우클릭, 새로 생성 
+test 생성
+
+만들어진 test db에 id, name, age, password 칼럼 생성
+
+테이블 이름은 users로.

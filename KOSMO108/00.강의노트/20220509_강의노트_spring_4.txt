@@ -1,0 +1,22 @@
+2022-05-09
+-------------------------------
+
+Spring Web MVC
+
+
+						핸들러 매핑 
+						1. url-pattern 
+						2. form 태그에 있는 name 속성 데이터 전달 
+화면 ----------> 프론트 콘트롤러(DispatcherServlet) -----------> 사용자 정의 콘트롤러(@Controller)
+
+															MemberVO mvo;
+<form>
+<input type="text"											request.getParameter("mid")
+		name="mid"											String mid;
+															mvo.getMid();
+
+화면 <---------- 프론트 콘트롤러(DispatcherServlet) <-- model <---- 사용자 정의 콘트롤러(@Controller)
+			        |				|
+					|				|				model m
+				  view  <------- view resolving		m.addAttribute(key, value);
+				  ${key }

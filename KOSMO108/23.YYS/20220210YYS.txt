@@ -1,0 +1,67 @@
+2022-02-10
+---------------------
+
+import 키워드
+	사용방법은 
+	사용자 정의 클래스 만들 때
+	package 키워드 하고 class 키워드 중간에 기술(사용)하면 된다. 
+	사용자 정의 클래스에서 자원을 사용하려고 할 때 사용하는 키워드이다.
+	
+	C:\Program Files\Java\jdk1.8.0_202\jre\lib\rt.jar 
+	
+	C:\00.KOSMO108\10.JExam\ch1\Exam_FlowControl_5.java
+		import java.lang.String;
+		import java.lang.Integer;
+		import java.lang.System;
+
+		import java.util.Scanner;
+		import java.util.Date;
+		import java.util.Calendar;
+
+문자 숫자 --> 숫자						parse
+	"1" + "2" = "12" --------> 1 + 2 = 3;
+
+숫자 --> 문자
+		Integer.toString()
+		String.valueOf()
+
+연산자 
+	1. == : 상등 연산자(등가 연산자) : 숫자(문자 포함 char : 양의정수 16비트) 비교할 때만 사용한다. <== 자바에서는 
+	2. 자바 문자열 비교 : equals() 함수로 한다. 
+
+	``` 내 생각``````
+	자바에서 기초자료형인 문자나 숫자는 ANSI Character로
+	int로 변환해서 비교하면 그만인데
+
+	String이나 Object와 같은 참조 자료형은 가령, new라는
+	인스턴스 연산자로 객체를 생성했을 때, 참조변수 주소랑
+	단순히, String이라는 변수에 어떤 문자열을 대입한거랑
+	주소가 달라져서 같은 "abc", "abc"여도
+	사람이 보기에는 똑같은데,
+	컴퓨터 입장에서는 그렇게 생각을 안 하는것 같음.
+	````
+		단 : 자바스크립트에서는  문자열, 숫자 == 연산자로 한다. 
+
+	```
+	자바는 Type of Langauge 인데,
+	자바스크립트는 Type of Langauge가 아니라서,
+	딱히 상관없는듯??!
+	```
+
+
+	3. 논리 연산 : short Circuit
+	4. 관계 연산
+	5. 증감연산자 (전위, 후위)
+		int a = 1;
+		a++;   --> int b = a++; int b = a = a + 1;
+	6. 삼항 연산자 : 조건식 ? 참 : 거짓;
+	7. 문자열 검증하는 것 
+			String str;
+
+			str = null;
+			str = ""; ---> str.length() = 0;
+
+			if (str !=null && str.length() > 0) {
+			}
+
+

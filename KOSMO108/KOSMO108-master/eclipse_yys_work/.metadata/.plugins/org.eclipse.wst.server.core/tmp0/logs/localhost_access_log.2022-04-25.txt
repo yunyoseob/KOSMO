@@ -1,0 +1,5 @@
+127.0.0.1 - - [25/Apr/2022:16:49:49 +0900] "GET / HTTP/1.1" 404 807
+0:0:0:0:0:0:0:1 - - [25/Apr/2022:16:51:20 +0900] "GET /kosMember_YYS2/kos_servlet/webxmlServlet.html HTTP/1.1" 200 859
+0:0:0:0:0:0:0:1 - - [25/Apr/2022:16:58:17 +0900] "GET /kosMember_YYS2/kos_servlet/webxmlJsp.jsp HTTP/1.1" 200 148
+0:0:0:0:0:0:0:1 - - [25/Apr/2022:16:58:49 +0900] "GET /kosMember_YYS2/WEB-INF/classes/a/b/c/test/servlet/Web_xmlServlet.java HTTP/1.1" 404 721
+0:0:0:0:0:0:0:1 - - [25/Apr/2022:16:59:09 +0900] "GET /kosMember_YYS2/WEB-INF/classes/a/b/c/test/servlet/Web_xmlServlet.java HTTP/1.1" 404 721

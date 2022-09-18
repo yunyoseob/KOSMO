@@ -1,0 +1,39 @@
+2022-06-27
+-------------------------------------
+
+React : CRA : Creat-React-App
+----------------------------------
+
+babel
+SPA - 동일 페이지에서 요청/응답을 수행하는 것 like ajax
+webpack 
+JSX
+	React.createElement(IngredientsList, {list:[.....]});
+
+	<IngredientsList list={[....]} />
+
+
+Creat-React-App 만들기 
+----------------------------------
+
+1. react_cra 폴더 만들기 
+
+2. nmp init 하기 
+C:\00.KOSMO108\50.react\react_cra>npm init -y
+
+3. create-react-app 설치하기 
+C:\00.KOSMO108\50.react\react_cra>npm install create-react-app -g --save
+
+
+4. CRA 로 App 만들기  
+C:\00.KOSMO108\50.react\react_cra>create-react-app client
+
+
+5. 실행하기 
+
+C:\00.KOSMO108\50.react\react_cra>cd client
+
+C:\00.KOSMO108\50.react\react_cra\client>npm start
+
+
+http://localhost:3000/ 자동으로 react 초기 페이지 나옴 

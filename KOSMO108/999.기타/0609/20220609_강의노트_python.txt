@@ -1,0 +1,20 @@
+2022-06-09
+-------------------------------------
+
+python -m pip install --upgrade pip 
+
+1. pip : 파이썬 패키지 설치 모듈
+-- pip 을 최신 모듈로 업그레드 하라고 하는 명령
+python -m pip install --upgrade pip
+
+
+2. numpy
+3. pandas
+4. matplotlib
+5. scipy
+6. scikit-learn
+
+7. jupyter 
+7.1 jupyter notebook
+
+pip install notebook --upgrade

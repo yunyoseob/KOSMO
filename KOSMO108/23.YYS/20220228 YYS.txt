@@ -1,0 +1,48 @@
+20220228 YYS txt
+
+HashMap
+
+다량의 데이터를 검색할 때, 빠르다.
+
+동일한 키값에 다른 밸류를 넣으면, 값이 바뀐다 
++ (마지막에 저장한 밸류가 나온다.)
+
+java.util : Interface : Iterator
+
+
+
+자료를 순차적으로 접근할 수 있도록 처리하는 객체 : 반복자
+
+(프로젝트에서 이터레이터란? 여러번 나누어 확인 or 반복하여 확인)
+
+========
+Set<k> : keySet()
+
+Collection<v> : values()
+
+Set<Map.Entry<K,V>> : entryset()
+===========
+
+
+set : 초기화하는 함수야
+
+get : return하는 함수야
+
+ex)
+
+10; 리턴해줘
+
+결과를 10으로 정해줘 return 10;
+
+has: 커서함수 (데이터가 있으면 껌뻑껌뻑, 없으면 stop)
+boolean true, false
+
+다음걸 확인하려면 hasnext() 써야함.
+
+has와 next는 짝궁이다.
+
+
+
+
+
+

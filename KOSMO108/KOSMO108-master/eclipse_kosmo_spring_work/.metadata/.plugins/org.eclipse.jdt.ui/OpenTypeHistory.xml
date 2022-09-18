@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<typeInfoHistroy>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.product.service{KosmoProductService.java[KosmoProductService" modifiers="513" timestamp="1652839035851"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.product.dao{KosmoProductDAO.java[KosmoProductDAO" modifiers="513" timestamp="1652839089186"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.common.service{ChabunService.java[ChabunService" modifiers="513" timestamp="1653552392057"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.common.dao{ChabunDAO.java[ChabunDAO" modifiers="513" timestamp="1653555842526"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.member.dao{KosmoMemberDAO.java[KosmoMemberDAO" modifiers="513" timestamp="1653036285049"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.member.service{KosmoMemberService.java[KosmoMemberService" modifiers="513" timestamp="1653036271404"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.cart.dao{KosmoCartDAO.java[KosmoCartDAO" modifiers="513" timestamp="1652929726564"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.cart.service{KosmoCartService.java[KosmoCartService" modifiers="513" timestamp="1652929698543"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.login.service{KosmoLoginService.java[KosmoLoginService" modifiers="513" timestamp="1652947526748"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.login.dao{KosmoLoginDAO.java[KosmoLoginDAO" modifiers="513" timestamp="1652947550497"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.board.service{KosmoBoardService.java[KosmoBoardService" modifiers="513" timestamp="1653382345797"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.board.dao{KosmoBoardDAO.java[KosmoBoardDAO" modifiers="513" timestamp="1653382357364"/>
+<typeInfo handle="=kosmoSpring_YYS/src&lt;a.b.c.com.kosmo.rboard.service{KosmoRboardService.java[KosmoRboardService" modifiers="513" timestamp="1653619085527"/>
+</typeInfoHistroy>

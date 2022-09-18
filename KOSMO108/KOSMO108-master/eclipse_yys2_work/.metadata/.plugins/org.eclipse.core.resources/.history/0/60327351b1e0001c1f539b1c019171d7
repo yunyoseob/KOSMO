@@ -1,0 +1,15 @@
+Manifest-Version: 1.0
+Class-Path: 
+
+<Resource    auth="Container"              
+            	type="javax.sql.DataSource" 
+            
+            name="jdbc/jndi_orclYYS00"
+            driverClassName="oracle.jdbc.driver.OracleDriver"
+            url="jdbc:oracle:thin:@127.0.0.1:1521:orclYYS00"
+            username="scott" 
+            password="tiger"
+            maxActive="100" 
+            maxIdle="30" 
+            maxWait="10000"  
+             />

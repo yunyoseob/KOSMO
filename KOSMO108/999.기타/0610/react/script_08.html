@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Document</title>
+<script src="https://unpkg.com/babel-standalone@6.15.0/babel.min.js"></script>
+</head>
+<body>
+<h3>화살표 함수 : Arrow Function</h3>
+<hr>
+
+<script type="text/babel">
+	
+	// 일반 함수
+	function : 키워드 
+	사용자 정의 함수 이름 
+	() :  소괄호 : 파라미터 받는, 선언 하는 공간
+	{} : 함수 블럭 
+	return : 키워드 
+
+    var lordify = function (firstname) {
+      
+      return `켄터베리의 ${firstname}`
+    }
+
+    console.log( lordify("전건희") )
+    console.log( lordify("전건희") )
+
+    // Arrow Function
+    var lordify_1 = firstname => `캔터베리의 ${firstname}`
+
+    console.log( lordify_1("전건희") )
+    console.log( lordify_1("전건희") )
+
+    var lordify_2 = (firstName, land) => `${land}의 ${firstName}`
+
+    console.log( lordify_2("전건희", "브리즈번") )
+    console.log( lordify_2("전건희", "시드니") )
+
+</script>
+	
+</body>
+</html>

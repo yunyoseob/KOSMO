@@ -1,0 +1,24 @@
+2022-02-25
+
+ArrayList 배열 []
+
+HashMap 배열이 아님
+
+둘 다 key값과 value값을 가진다.
+
+ArrayList는 key가 곧 index이다.
+
+HashMap은 index가 없다.
+
+
+ArrayList는 순차적으로 찾지만
+
+HashMap은 저장된 위치에서 가져온다.
+
+자료가 많은 경우, HashMap이 빠르지만, 그만큼 메모리를 많이 잡아먹는다.
+
+ArrayList
+[]배열객체
+
+HashMap
+{} 객체

@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>쉬는 시간</title>
+<link rel="stylesheet" href="/kosMember_YYS2/css/breakTimee.css">
+<script  src="http://code.jquery.com/jquery-latest.min.js"></script>
+<script type="text/javascript">
+	$(document).ready(function(){
+		alert("jQUery ready function");
+		// setInterval(function(){}, second);
+		// setInterval(function(){}, 1000); 1초 한번씩 실행하시오 
+		var time = setInterval(function(){
+			
+			var now = new Date();
+			var hr=now.getHours();
+			var min=now.getMinutes();
+			var sec=now.getSeconds();	
+			
+			if(hr.toString().length==1){
+				hr="0"+hr;
+			}
+			
+            if(min.toString().length==1){
+            	min="0"+min;	
+            }
+            			
+            if(sec.toString().length==1){
+            	sec="0"+sec;	
+            }
+							
+			$("span").eq(0).text(hr);
+			$("span").eq(1).text(min);
+			$("span").eq(2).text(sec);
+		}, 1000);		
+		
+		$("#timeBtn").click(function(){
+			alert("click function");
+			var time=600;
+			var min="";
+			var sec="";
+			
+			var x=setInterval(function(){
+				min=parseInt(time/60);
+				sec=time%60;
+				
+				document.getElementById("time").innerHTML = min+"분"+sec+"초";
+				time--;
+				
+				if (time<0){
+					clearInterval(x)
+					document.getElementById("time").innerHTML="쉬는시간 끝!!!";
+					
+				}
+			}, 1000);
+		});
+	});
+</script>
+</head>
+<body>
+<div class="center">	
+    	<h1>KOSMO 108기</h1><h2>쉬는 시간</h2>
+    	<hr>	
+    	<h1>
+    		<span>00</span>:<span>00</span>:<span>00</span>
+    	</h1>
+    	<button type="button" id="timeBtn">쉬는시간 시작버튼!!!</button>
+    	<div id="time"></div>
+</div>
+</body>
+</html>

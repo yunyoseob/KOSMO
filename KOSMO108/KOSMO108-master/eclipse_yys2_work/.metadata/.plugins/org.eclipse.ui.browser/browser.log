@@ -1,0 +1,6 @@
+
+4월 25, 2022 19:46:11.460 NEW SESSION
+4월 25, 2022 19:46:11.460 [5820:2128:0425/194611.456:ERROR:os_crypt_win.cc(93)] Failed to decrypt: 키를 지정된 상태에서 사용하기에 부적합합니다. (0x8009000B)
+4월 25, 2022 19:46:11.463 [5820:2128:0425/194611.462:ERROR:os_crypt_win.cc(93)] Failed to decrypt: 키를 지정된 상태에서 사용하기에 부적합합니다. (0x8009000B)
+4월 25, 2022 19:46:11.467 [5820:2128:0425/194611.466:ERROR:os_crypt_win.cc(93)] Failed to decrypt: 키를 지정된 상태에서 사용하기에 부적합합니다. (0x8009000B)
+4월 25, 2022 19:46:42.03 [5820:5664:0425/194642.002:ERROR:util.cc(126)] Can't create base directory: C:\Program Files\Google\GoogleUpdater
